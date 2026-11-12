@@ -22,13 +22,13 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsup",
+    "build": "node init && tsup",
     "test": "vitest run --environment node && vitest run --environment jsdom",
     "ci": "npm run build && npm test"
   },
   "sideEffects": false,
   "dependencies": {
-    "@stellar/stellar-sdk": "^16.2.0"
+    "@stellar/stellar-sdk": "^16.4.1"
   },
   "devDependencies": {
     "@types/node": "^20.19.10",
